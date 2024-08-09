@@ -24,13 +24,14 @@ def send_otp(phone_number, otp):
     )
     return message.sid
 
+
 @app.route('/send_otp', methods=['POST'])
 def send_otp_route():
     data = request.get_json()
     phone_number = data.get('phone_number')
 
     otp = generate_otp()
-    send_otp(phone_number, otp)
+    send_otp(phone_number, otp) 
 
     otp_storage[phone_number] = otp
 
