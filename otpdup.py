@@ -5,9 +5,9 @@ import os
 
 app = Flask(__name__)
 
-TWILO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
-TWILO_AUTH_TOKEN = '4de4afd93cca27f13b5800631100efc1'
-TWILO_PHONE_NUMBER = '+919786191698'
+TWILO_ACCOUNT_SID = 'reffer obsidean notes'
+TWILO_AUTH_TOKEN = 'reffer obsedian notes'
+TWILO_PHONE_NUMBER = 'reffer obsidean notes'
 
 client = Client(TWILO_ACCOUNT_SID, TWILO_AUTH_TOKEN)
 
